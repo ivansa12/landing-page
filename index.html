@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Loja Online</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f2f2f2;
+  font-family:Arial,Helvetica,sans-serif
+}
+.card{
+  width:900px;
+  max-width:95%;
+  background:linear-gradient(180deg,#ff9a5c,#ffd6c9);
+  border-radius:20px;
+  padding:40px;
+  display:flex;
+  gap:40px
+}
+.phone{flex:1;display:flex;justify-content:center}
+.phone video{
+  width:100%;
+  max-width:260px;
+  aspect-ratio:9/16;
+  border-radius:25px;
+  object-fit:cover;
+  box-shadow:0 10px 30px rgba(0,0,0,.25)
+}
+.content{flex:1;color:#a6462d}
+.content h1{font-size:42px;line-height:1;margin-bottom:15px}
+.hearts{margin-bottom:20px}
+.content p{font-size:16px;line-height:1.5;margin-bottom:30px}
+.btn{
+  display:inline-block;
+  background:#ff7a3c;
+  color:#fff;
+  padding:14px 40px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold
+}
+.site{margin-top:25px;font-size:14px;opacity:.8}
+@media(max-width:768px){
+  .card{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="phone">
+    <a href="https://SEU-LINK-DE-COMPRA.com">
+      <video autoplay muted loop playsinline preload="metadata" poster="fallback.jpg">
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </a>
+  </div>
+
+  <div class="content">
+    <h1>LOJA<br>ONLINE</h1>
+    <div class="hearts">❤️ ❤️ ❤️</div>
+    <p>
+      Confira todas as novidades e promoções no nosso site.
+      Muitas peças maravilhosas para você simplesmente se apaixonar.
+    </p>
+    <a href="https://SEU-LINK-DE-COMPRA.com" class="btn">COMPRAR</a>
+    <div class="site">www.seusite.com.br</div>
+  </div>
+
+</div>
+
+</body>
+</html>
